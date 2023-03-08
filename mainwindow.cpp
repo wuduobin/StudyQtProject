@@ -43,7 +43,8 @@ void MainWindow::addTask()
         tr("Task name"),
         QLineEdit::Normal,
         tr("Untitled task"), &ok);
-    if (ok && !name.isEmpty()) {
+    if (ok && !name.isEmpty())
+    {
         qDebug() << "Adding new task";
         Task* task = new Task(name);
         connect(task, &Task::removed, this, &MainWindow::removeTask);
@@ -63,7 +64,7 @@ void MainWindow::removeTask(Task *task)
     updateStatus();
 }
 
-void MainWindow::taskStatusChanged(Task *task)
+void MainWindow::taskStatusChanged(Task* /*task*/)
 {
     updateStatus();
 }
