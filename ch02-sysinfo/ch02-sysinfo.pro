@@ -1,9 +1,15 @@
-QT       += core gui charts
+QT       += core gui charts # This is a list of the Qt modules used in the project.
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-CONFIG += c++17 sdk_no_version_check
+CONFIG += c++17 sdk_no_version_check # This is a list of configuration options for the project.
 QMAKE_MACOSX_DEPLOYMENT_TARGET = 10.15
+
+TARGET = ch02-sysinfo # This is the name of the target output file.
+
+# This is the project template used when generating the Makefile.app tells qmake to generate
+# a Makefile targeted for a binary. If you are building a library, use the lib value.
+TEMPLATE = app
 
 # You can make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
