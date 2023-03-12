@@ -14,7 +14,7 @@ SysInfo::SysInfo()
 {
 }
 
-SysInfo &SysInfo::instance()
+SysInfo& SysInfo::instance()
 {
 #ifdef Q_OS_WIN
     static SysinfoWindowsImpl singleton;

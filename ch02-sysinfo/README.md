@@ -26,7 +26,7 @@
 - QT：此项目中使用的Qt modules列表
 - CONFIG：此项目中使用的配置选项
 - TARGET：目标输出文件的名字
-- TEMPLATE：当生成二进制文件时项目的模版，例如app,lib
+- TEMPLATE：当生成二进制文件时项目的模版，例如app,lib,subdirs
 - 平台下使用
     ```qmake
     windows {
