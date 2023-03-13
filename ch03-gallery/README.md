@@ -1,5 +1,5 @@
 # ch03-gallery
-- 像专辑那样管理图片
+- 像相册那样管理图片
 ![](res/1.png)
 ## gallery-core
 - 是一个library动态库包括了应用逻辑的核心：1）数据类；2）持久存储SQL；3）Model使存储通过一个单一的入口点提供给UI
